@@ -16,9 +16,7 @@ class Solution:
             length += 1
             tmp = tmp.next
         
-        if length > 0:
-            modulo = k % length
-        else:
+        if length <= 0:
             return None
         
         # Assigns the head of resutl
