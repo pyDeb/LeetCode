@@ -1,6 +1,6 @@
 class Solution:
     def searchRange(self, nums, target: int):
-      
+        
         if target not in nums:
             return [-1, -1]
 
