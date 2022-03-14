@@ -1,7 +1,6 @@
 class Solution:
     def searchRange(self, nums, target: int):
-        # Length of current list that is being reviewed. It is the length of the original list in the beginning.
-
+      
         if target not in nums:
             return [-1, -1]
 
