@@ -6,6 +6,7 @@
 #         self.right = right
 class Solution:
     def sortedArrayToBST(self, nums: List[int]) -> Optional[TreeNode]:
+        # Middle is the root of the tree since it is sorted in ascending order
         middle = int(len(nums)/2)
 
         root = TreeNode(val=nums[middle])
@@ -14,7 +15,8 @@ class Solution:
 
         return root
 
-
+    # In each round, find the middle of each side. Make it the root of its own subtree and append it to the parent node.
+    # Do it until you find a an array of one value. 
     def insert_to_tree(self, root, left_side, right_side):
         right_size = len(right_side)
         left_size = len(left_side)
